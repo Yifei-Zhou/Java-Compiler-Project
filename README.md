@@ -2,7 +2,7 @@
 
 This is a complete and functional compiler development project.
 
-This compiler is built for a new language `MicroC` (or `uC`), which is a new language I developed. `MicroC` is a simplified version of C language, which combines the grammars from several different programming languages, such as Java, Python, and C. 'uC' is an Object-oriented programming language, and it supports many critical components of a programming language, such as control structures (if, while), functions, type checking, explicit/implicit type conversions, arrays, pointers, etc.
+This compiler is built for a new language `MicroC` (or `uC`), which is a new language I developed. `MicroC` is a simplified version of C language, which combines the grammars from several different programming languages, such as Java, Python, and C. `MicroC` is an Object-oriented programming language, and it supports many critical components of a programming language, such as control structures (if, while), functions, type checking, explicit/implicit type conversions, arrays, pointers, etc.
 
 This compiler development project uses a parser generator: [ANTLR](https://www.antlr.org/), to generate a parser in Java that can build and walk parse trees from `MicroC` grammar. Then, ANTLR can be configured to automatically generate ASTs (Abstract Syntax Tree). Finally, we perform a walk of the generated ASTs and generate Risc-V assembly codes.
 
