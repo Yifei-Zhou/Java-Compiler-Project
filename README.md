@@ -85,6 +85,8 @@ while_stmt returns [WhileNode node] : 'while' '(' cond ')' '{' statements '}' {$
 
 Please refer to the [environment documentations](https://cap.ecn.purdue.edu/compilers/project/) to setup the environment
 
+### Build Compiler
+
 The following codes show how to use ANTLR to translate the `MicroC.g4` file to generate a parser:
 
 ```
@@ -118,8 +120,12 @@ The following code use `java/compiler/Compiler.java` to compile the parser and l
 javac -cp $CLASSPATH -d classes java/*.java build/*.java
 ```
 
+### Test Compiler
+
 `runme` is a shell script that runs the Scanner, as shown in the code below. This script takes two arguments: 1. the input file name; 2. the output file name. Please make sure to run `make clean; make compiler` before running `runme`.
 
 ```
 $ ./runme tests/testX.uc out
 ```
+
+Finally, use this code to check the differecnes of the compiler output v.s. standard output
