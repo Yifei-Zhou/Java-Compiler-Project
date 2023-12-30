@@ -16,8 +16,8 @@ rm -rf build classes
 mkdir build classes
 antlr -o build MicroC.g4
 javac -cp $CLASSPATH -d classes java/*.java build/*.java
-$ ./runme tests/testX.uc out
-$ diff out outputs/testX.out
+$ ./runme AllTests/testsX/testY.uc out
+$ diff out AllOutputs/outputsX/testY.out
 ```
 
 ## Background of Compiler
@@ -124,12 +124,14 @@ javac -cp $CLASSPATH -d classes java/*.java build/*.java
 
 `runme` is a shell script that runs the Scanner, as shown in the code below. This script takes two arguments: 1. the input file name; 2. the output file name. Please make sure to run `make clean; make compiler` before running `runme`.
 
-```
-$ ./runme tests/testX.uc out
-```
-
-Finally, use this code to check the differecnes of the compiler output v.s. standard output
+There are 7 groups of tests in 7 different folders. Each group contains several tests that can be run. To run the `Y` test in the `X` group of tests, use the command below:
 
 ```
-$ diff out outputs/testX.out
+$ ./runme AllTests/testsX/testY.uc out
+```
+
+Finally, use this code to check the differecnes of the compiler output v.s. standard output:
+
+```
+$ diff out AllOutputs/outputsX/testY.out
 ```
