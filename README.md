@@ -161,6 +161,8 @@ javac -cp $CLASSPATH -d classes java/*.java build/*.java
 
 ### Test Compiler
 
+Many testing uC programs are provided. You may test this compiler by generating Risc-V assembly codes using these programs. To simplify the testing, a shell script called `runme` is provided. 
+
 `runme` is a shell script that runs the Scanner, as shown in the code below. This script takes two arguments: 1. the input file name; 2. the output file name. Please make sure to run `make clean; make compiler` before running `runme`.
 
 There are 7 groups of tests in 7 different folders. Each group contains several tests that can be run. To run the `Y` test in the `X` group of tests, use the command below:
@@ -168,3 +170,12 @@ There are 7 groups of tests in 7 different folders. Each group contains several 
 ```
 $ ./runme AllTests/testsX/testY.uc out
 ```
+
+## Thank You for Exploring my Compiler Project!!!
+
+Hooray!!! You have finished reading this `README` document!
+
+I sincerely hope you enjoyed exploring this compiler! Hope you have learned something new! 
+
+If you have any questions or feedback, please reach out to me at: `yfzhou23@gmail.com`
+
