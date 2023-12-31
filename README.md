@@ -171,7 +171,7 @@ There are 7 groups of tests in 7 different folders. Each group contains several 
 $ ./runme AllTests/testsX/testY.uc out
 ```
 
-## Thank You for Exploring my Compiler Project!!!
+## Thank you for Exploring my Compiler project!!!
 
 Hooray!!! You have finished reading this `README` document!
 
